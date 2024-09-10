@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://d4lfs1hbhm0bw"]
+
+[ext_resource type="Texture2D" uid="uid://b17p1r5phuaoh" path="res://Modelos/carreteraLevel1.png" id="1_tp3mr"]
+[ext_resource type="PackedScene" uid="uid://ck2asg56coy8l" path="res://Escenas/Jugador.tscn" id="2_1b76e"]
+[ext_resource type="PackedScene" uid="uid://bnb3bweudipaw" path="res://Escenas/bache.tscn" id="3_bv1gt"]
+[ext_resource type="Script" path="res://Escenas/camaraJugador.gd" id="4_qulj4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CarreteraLevel1" type="Sprite2D" parent="."]
+position = Vector2(570, 48)
+scale = Vector2(0.93533, 1.03993)
+texture = ExtResource("1_tp3mr")
+
+[node name="Bache" parent="." instance=ExtResource("3_bv1gt")]
+position = Vector2(521, -498)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_1b76e")]
+position = Vector2(490, 504)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-490, -504)
+script = ExtResource("4_qulj4")

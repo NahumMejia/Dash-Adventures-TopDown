@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://csw6acioadlju"]
+
+[ext_resource type="Texture2D" uid="uid://b17p1r5phuaoh" path="res://Modelos/carreteraLevel1.png" id="1_6mted"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bu1gi"]
+size = Vector2(233, 5143)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r74kx"]
+size = Vector2(89, 5148)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bceuq"]
+size = Vector2(767, 6)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(172, -3070)
+scale = Vector2(1.79514, 4.42708)
+texture = ExtResource("1_6mted")
+offset = Vector2(31.7524, 243.727)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(630.5, -2000.5)
+shape = SubResource("RectangleShape2D_bu1gi")
+debug_color = Color(0.960409, 0, 0.516196, 0.42)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-263.5, -1998)
+shape = SubResource("RectangleShape2D_r74kx")
+debug_color = Color(0.976112, 0, 0.414335, 0.42)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(136, 560)
+shape = SubResource("RectangleShape2D_bceuq")
+debug_color = Color(0.624521, 0.532369, 7.70092e-07, 0.42)

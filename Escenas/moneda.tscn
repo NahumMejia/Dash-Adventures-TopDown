@@ -1,0 +1,71 @@
+[gd_scene load_steps=8 format=3 uid="uid://bchy2mxr5fxyy"]
+
+[ext_resource type="Script" path="res://Scripts/Coin2D.gd" id="1_0f8xu"]
+[ext_resource type="Texture2D" uid="uid://bs05nfkxt2xkc" path="res://Modelos/coin_gold.png" id="1_v76ub"]
+[ext_resource type="AudioStream" uid="uid://btwewr20hfuvq" path="res://Musica/coin_sonido.MP3" id="3_jvdpa"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ij436"]
+radius = 43.566
+
+[sub_resource type="Animation" id="Animation_c0lpv"]
+resource_name = "Coin"
+length = 1.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_bbkfx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k2yls"]
+_data = {
+"Coin": SubResource("Animation_c0lpv"),
+"RESET": SubResource("Animation_bbkfx")
+}
+
+[node name="Node" type="Node2D"]
+
+[node name="tomado" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_jvdpa")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_0f8xu")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(5.8125, 5.51563)
+texture = ExtResource("1_v76ub")
+hframes = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CircleShape2D_ij436")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D"]
+libraries = {
+"": SubResource("AnimationLibrary_k2yls")
+}
+autoplay = "Coin"
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

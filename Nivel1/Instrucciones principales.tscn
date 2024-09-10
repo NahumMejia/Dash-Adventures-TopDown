@@ -1,0 +1,423 @@
+[gd_scene load_steps=14 format=3 uid="uid://bof6qg8i2lra0"]
+
+[ext_resource type="FontFile" uid="uid://bs5hhjtx1h8p0" path="res://Fuentes/Gameplay.ttf" id="1_tvjd8"]
+[ext_resource type="Script" path="res://Scripts/Instrucciones principales.gd" id="1_x6iae"]
+[ext_resource type="Texture2D" uid="uid://dmvc217c82w6g" path="res://Modelos/W.png" id="2_mduv7"]
+[ext_resource type="Texture2D" uid="uid://d22t8l1lxgv0t" path="res://Modelos/A.png" id="3_6nbnw"]
+[ext_resource type="Texture2D" uid="uid://bsyk7dymrcvvj" path="res://Modelos/Vidas_Juego.png" id="3_77g2d"]
+[ext_resource type="Texture2D" uid="uid://dy5hi1cxqinsl" path="res://Modelos/coin.png" id="4_k5p8h"]
+[ext_resource type="Texture2D" uid="uid://0jhr7t42h8v2" path="res://Modelos/S.png" id="4_uti8l"]
+[ext_resource type="Texture2D" uid="uid://ctvffdlp6ubn8" path="res://Modelos/D.png" id="5_0eofc"]
+[ext_resource type="Texture2D" uid="uid://dxufdu5lyrebp" path="res://Modelos/Obs_Noche.png" id="5_k1jxp"]
+[ext_resource type="Texture2D" uid="uid://bktijdqyeif3s" path="res://Modelos/panelVelocidad.png" id="6_wphob"]
+
+[sub_resource type="Animation" id="Animation_op1y4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_m14fr"]
+resource_name = "new_animation"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 4, 5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wk2mc"]
+_data = {
+"RESET": SubResource("Animation_op1y4"),
+"new_animation": SubResource("Animation_m14fr")
+}
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x6iae")
+
+[node name="ColeccionablesR" type="ColorRect" parent="."]
+visible = false
+custom_minimum_size = Vector2(750, 700)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -350.0
+offset_right = 375.0
+offset_bottom = 350.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.258824, 0, 0.27451, 0.941176)
+
+[node name="Título2" type="RichTextLabel" parent="ColeccionablesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -373.0
+offset_top = -343.0
+offset_right = 375.0
+offset_bottom = -258.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_tvjd8")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center]Informacion importante[/center]
+"
+
+[node name="INSTRUCCIONES2" type="Label" parent="ColeccionablesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -234.0
+offset_top = -267.0
+offset_right = 224.0
+offset_bottom = -202.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+theme_override_font_sizes/font_size = 10
+text = "En esta aventura, te encontraras de todo, desde preciosas monedas,
+hasta obstaculos que podrian herrite, incluso... la muerte.
+
+Pero para eso estan los amigos, aqui te muestro lo que necesitas saber:"
+horizontal_alignment = 1
+
+[node name="INSTRUCCIONES3" type="Label" parent="ColeccionablesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = -155.0
+offset_right = 143.0
+offset_bottom = -94.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+theme_override_font_sizes/font_size = 10
+text = "En total tienes 3 vidas, cada una de ellas 
+vale oro, no podras conseguir mas
+durante el nivel, cada que choques
+con un obstaculo iras perdiendo una."
+horizontal_alignment = 1
+
+[node name="INSTRUCCIONES4" type="Label" parent="ColeccionablesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = -50.0
+offset_right = 168.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+theme_override_font_sizes/font_size = 10
+text = "Las monedas brillantes son esenciales
+para demostrar que tan buen corredor eres,
+INTENTA tomar todas."
+horizontal_alignment = 1
+
+[node name="INSTRUCCIONES5" type="Label" parent="ColeccionablesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = 58.0
+offset_right = 153.0
+offset_bottom = 103.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+theme_override_font_sizes/font_size = 10
+text = "dURANTE TODO EL NIVEL TE ENCONTRARAS
+CON DIFERENTES OBSTACULOS, DEBERAS EVITAR
+CADA UNO DE ELLOS, CUIDADO AMIGO."
+horizontal_alignment = 1
+
+[node name="INSTRUCCIONES6" type="Label" parent="ColeccionablesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = 176.0
+offset_right = 166.0
+offset_bottom = 221.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+theme_override_font_sizes/font_size = 10
+text = "Asi como hay objetos que relantizan tu aventura,
+hay otros que los aceleran, sube a este panel
+de velocidad para volar"
+horizontal_alignment = 1
+
+[node name="S3" type="Label" parent="ColeccionablesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -286.0
+offset_top = 288.0
+offset_right = 271.0
+offset_bottom = 334.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+theme_override_font_sizes/font_size = 30
+text = "PRESIONA 'ENTER' PARA CERRAR
+"
+horizontal_alignment = 1
+
+[node name="VIDA" type="Sprite2D" parent="ColeccionablesR"]
+position = Vector2(110, 227)
+scale = Vector2(0.169855, 0.169855)
+texture = ExtResource("3_77g2d")
+
+[node name="MONEDA" type="Sprite2D" parent="ColeccionablesR"]
+position = Vector2(110, 325)
+scale = Vector2(4.75, 4.39627)
+texture = ExtResource("4_k5p8h")
+hframes = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColeccionablesR/MONEDA"]
+libraries = {
+"": SubResource("AnimationLibrary_wk2mc")
+}
+autoplay = "new_animation"
+
+[node name="OBSTACULOS" type="Sprite2D" parent="ColeccionablesR"]
+position = Vector2(119, 426)
+scale = Vector2(0.0625, 0.060785)
+texture = ExtResource("5_k1jxp")
+
+[node name="Ayuda" type="Sprite2D" parent="ColeccionablesR"]
+position = Vector2(118, 545)
+scale = Vector2(-0.109404, -0.109403)
+texture = ExtResource("6_wphob")
+
+[node name="ControlesR" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(750, 700)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -375.0
+offset_top = -350.0
+offset_right = 375.0
+offset_bottom = 350.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.454902, 0.501961, 0.329412, 0.941176)
+
+[node name="D" type="Sprite2D" parent="ControlesR"]
+position = Vector2(110, 455)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("5_0eofc")
+
+[node name="W" type="Sprite2D" parent="ControlesR"]
+position = Vector2(110, 255)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_mduv7")
+
+[node name="A" type="Sprite2D" parent="ControlesR"]
+position = Vector2(110, 355)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_6nbnw")
+
+[node name="S" type="Sprite2D" parent="ControlesR"]
+position = Vector2(110, 555)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_uti8l")
+
+[node name="Título" type="RichTextLabel" parent="ControlesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -373.0
+offset_top = -343.0
+offset_right = 375.0
+offset_bottom = -258.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_tvjd8")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[center]BIENVENIDO[/center]
+"
+
+[node name="INSTRUCCIONES" type="Label" parent="ControlesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -337.0
+offset_top = -267.0
+offset_right = 346.0
+offset_bottom = -160.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+text = "Bienvenido a Dash Adventures, en esta aventura, te enfrentaras
+a lo peor de lo peor: las carreteras.
+
+eres el mejor piloto, pero, aun asi, los mejores tienen que repasar
+sus controles:"
+horizontal_alignment = 1
+
+[node name="W2" type="Label" parent="ControlesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -105.0
+offset_right = 199.0
+offset_bottom = -84.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+text = "Podras moverte y acelerar con 'W'"
+horizontal_alignment = 1
+
+[node name="A2" type="Label" parent="ControlesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -5.0
+offset_right = 199.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+text = "GIRAR A LA IZQUIERDA con 'a'
+"
+horizontal_alignment = 1
+
+[node name="D2" type="Label" parent="ControlesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = 95.0
+offset_right = 199.0
+offset_bottom = 116.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+text = "GIRAR A LA derecha con 'D'
+"
+horizontal_alignment = 1
+
+[node name="S2" type="Label" parent="ControlesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = 195.0
+offset_right = 199.0
+offset_bottom = 218.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+text = "FRENAR E IR HACIA ATRaS CON LA 'S'
+"
+horizontal_alignment = 1
+
+[node name="S4" type="Label" parent="ControlesR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -236.0
+offset_top = 274.0
+offset_right = 221.0
+offset_bottom = 320.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_tvjd8")
+theme_override_font_sizes/font_size = 30
+text = "PRESIONA 'ENTER' PARA CERRAR
+"
+horizontal_alignment = 1

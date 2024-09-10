@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmdeqbgmfyu3l"]
+
+[ext_resource type="Script" path="res://Scripts/obstaculoNivel1.gd" id="1_74l75"]
+[ext_resource type="Texture2D" uid="uid://dxufdu5lyrebp" path="res://Modelos/Obs_Noche.png" id="1_ngfrv"]
+[ext_resource type="AudioStream" uid="uid://csmd5dwcmbmdw" path="res://Musica/damage_sound.MP3" id="3_t8jdj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6b2x"]
+size = Vector2(128.75, 93)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ljv6l"]
+size = Vector2(122, 104.5)
+
+[node name="CharacterBody2D" type="StaticBody2D"]
+script = ExtResource("1_74l75")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.131125, 0.136812)
+texture = ExtResource("1_ngfrv")
+
+[node name="Mapa" type="CollisionShape2D" parent="."]
+position = Vector2(-9.375, 33.5)
+shape = SubResource("RectangleShape2D_s6b2x")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Jugador" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-10, 31.75)
+shape = SubResource("RectangleShape2D_ljv6l")
+debug_color = Color(0.862745, 0.32549, 0.4, 0.270588)
+
+[node name="damage" type="AudioStreamPlayer2D" parent="Area2D"]
+stream = ExtResource("3_t8jdj")
+volume_db = 11.556
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

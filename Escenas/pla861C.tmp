@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dyu4bgpc425mi"]
+
+[ext_resource type="Script" path="res://Escenas/player.gd" id="1_47eey"]
+[ext_resource type="Texture2D" uid="uid://yiyhdnbio3s5" path="res://Modelos/D2_Vista aerea.png" id="1_r1yap"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jnc0n"]
+size = Vector2(122, 153)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_47eey")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.180385, 0.150112)
+texture = ExtResource("1_r1yap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5.5)
+shape = SubResource("RectangleShape2D_jnc0n")

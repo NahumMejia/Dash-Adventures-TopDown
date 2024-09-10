@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://d4lfs1hbhm0bw"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_8o4u6"]
+[ext_resource type="PackedScene" uid="uid://dyu4bgpc425mi" path="res://Escenas/player.tscn" id="2_pknj7"]
+[ext_resource type="PackedScene" uid="uid://bl33614adjmem" path="res://Escenas/carretera.tscn" id="3_dwaek"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_8o4u6")
+
+[node name="Area2D" parent="." instance=ExtResource("2_pknj7")]
+position = Vector2(192, 533)
+
+[node name="carretera" parent="." instance=ExtResource("3_dwaek")]
+script = null

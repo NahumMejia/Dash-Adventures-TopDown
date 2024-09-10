@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://igmnyvgw7dvv"]
+
+[ext_resource type="FontFile" uid="uid://ccr0nya5156w2" path="res://Fuentes/game_over.ttf" id="1_anq64"]
+[ext_resource type="Texture2D" uid="uid://eujpg5dtj7q8" path="res://Sprites/D2_Vista aerea.png" id="2_wrc73"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aoits"]
+size = Vector2(94, 127)
+
+[node name="Tutorial" type="Node2D"]
+
+[node name="textoTutorial1" type="RichTextLabel" parent="."]
+offset_left = 395.0
+offset_top = 72.0
+offset_right = 1579.0
+offset_bottom = 224.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_fonts/normal_font = ExtResource("1_anq64")
+theme_override_font_sizes/normal_font_size = 100
+text = "UTILIZA LAS FLECHAS DE DIRECCIÓN PARA MOVER EL CARRO"
+
+[node name="textoTutorial2" type="RichTextLabel" parent="."]
+offset_left = 472.0
+offset_top = 904.0
+offset_right = 1484.0
+offset_bottom = 1056.0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_fonts/normal_font = ExtResource("1_anq64")
+theme_override_font_sizes/normal_font_size = 100
+text = "EVITA LOS OBSTÁCULOS Y RECOGE LOS ENGRANAJES "
+
+[node name="carro" type="CharacterBody2D" parent="."]
+
+[node name="spriteCarro" type="Sprite2D" parent="carro"]
+texture_filter = 1
+position = Vector2(950, 793)
+scale = Vector2(0.136998, 0.125698)
+texture = ExtResource("2_wrc73")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="carro"]
+texture_filter = 1
+position = Vector2(950, 789)
+shape = SubResource("RectangleShape2D_aoits")

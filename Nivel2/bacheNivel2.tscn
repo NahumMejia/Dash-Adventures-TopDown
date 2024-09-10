@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://dka4a3spd4o0r"]
+
+[ext_resource type="Texture2D" uid="uid://brp4ofhc2doet" path="res://Modelos/hoyo.png" id="1_k8jsb"]
+[ext_resource type="Script" path="res://Nivel2/bacheNivel2.gd" id="1_r56o8"]
+[ext_resource type="AudioStream" uid="uid://csmd5dwcmbmdw" path="res://Musica/damage_sound.MP3" id="3_f3soa"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_150r8"]
+radius = 377.76
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p53qd"]
+radius = 82.0975
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_r56o8")
+
+[node name="AspectRatioContainer" type="Sprite2D" parent="."]
+position = Vector2(-1, 2)
+scale = Vector2(0.424405, 0.424405)
+texture = ExtResource("1_k8jsb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -1)
+scale = Vector2(0.177381, 0.177381)
+shape = SubResource("CircleShape2D_150r8")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_p53qd")
+
+[node name="damage" type="AudioStreamPlayer2D" parent="Area2D"]
+stream = ExtResource("3_f3soa")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

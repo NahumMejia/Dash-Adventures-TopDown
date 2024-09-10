@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://cyo7py6nlhvja"]
+
+[ext_resource type="Texture2D" uid="uid://bktijdqyeif3s" path="res://Modelos/panelVelocidad.png" id="1_5ybvv"]
+[ext_resource type="Script" path="res://Scripts/PanelSpeed.gd" id="1_8crei"]
+[ext_resource type="AudioStream" uid="uid://cxovc4a7dtyuo" path="res://Musica/spin.MP3" id="3_idf8a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e33y4"]
+size = Vector2(201, 283)
+
+[node name="StaticBody2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_8crei")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+rotation = -3.14159
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_5ybvv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_e33y4")
+
+[node name="spin" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_idf8a")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

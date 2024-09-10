@@ -1,0 +1,176 @@
+[gd_scene load_steps=17 format=3 uid="uid://cyfi2lrj3075i"]
+
+[ext_resource type="Script" path="res://Nivel2/nivel2.gd" id="1_7wgug"]
+[ext_resource type="PackedScene" uid="uid://siwcdwjkxre1" path="res://Escenas/pause_menu.tscn" id="2_4idyg"]
+[ext_resource type="PackedScene" uid="uid://74vvlmicuc28" path="res://Nivel2/CurvaCampo.tscn" id="2_n06wi"]
+[ext_resource type="PackedScene" uid="uid://dja8fjdc8424w" path="res://Nivel2/carreteraInicioNivel2.tscn" id="2_q3xi2"]
+[ext_resource type="PackedScene" uid="uid://bt3lu5ut3km6q" path="res://Nivel2/oveja.tscn" id="4_eioub"]
+[ext_resource type="PackedScene" uid="uid://cyo7py6nlhvja" path="res://Escenas/panelSped.tscn" id="5_8aa6g"]
+[ext_resource type="PackedScene" uid="uid://dadh4to32yl8n" path="res://Nivel2/carreteraContinuaNivel2.tscn" id="5_coo4y"]
+[ext_resource type="PackedScene" uid="uid://c5yeej553swee" path="res://Escenas/hongoDecoracion.tscn" id="6_4bwbr"]
+[ext_resource type="PackedScene" uid="uid://dka4a3spd4o0r" path="res://Nivel2/bacheNivel2.tscn" id="9_g0n6y"]
+[ext_resource type="PackedScene" uid="uid://bsu71umnx8g70" path="res://Nivel2/moneda2.tscn" id="9_q6q2j"]
+[ext_resource type="PackedScene" uid="uid://bchy2mxr5fxyy" path="res://Escenas/moneda.tscn" id="11_2ud8b"]
+[ext_resource type="PackedScene" uid="uid://bi2d0ohowfreo" path="res://Nivel2/tronco.tscn" id="12_1bxa2"]
+[ext_resource type="PackedScene" uid="uid://cm3162eroddyr" path="res://Nivel1/bacheNivel1.tscn" id="12_5kjv5"]
+[ext_resource type="PackedScene" uid="uid://imsnmd417r8p" path="res://Escenas/playerFinal.tscn" id="14_7aqct"]
+[ext_resource type="PackedScene" uid="uid://dch2wfkkhiqwa" path="res://Nivel2/cuevaNivel2.tscn" id="14_eh0sk"]
+[ext_resource type="AudioStream" uid="uid://dssgtq5kwmm1a" path="res://Musica/Special Stage - Sonic the Hedgehog 2 [OST].mp3" id="16_a7jq8"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_7wgug")
+
+[node name="Fondo" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(-755.57, -5627.84)
+
+[node name="Pausa" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="Pausa" instance=ExtResource("2_4idyg")]
+visible = false
+
+[node name="Mapa partes" type="Node2D" parent="."]
+
+[node name="Inicio" parent="Mapa partes" instance=ExtResource("2_q3xi2")]
+position = Vector2(905, 6683)
+
+[node name="Inicio player" parent="Mapa partes" instance=ExtResource("2_q3xi2")]
+position = Vector2(905, 1584)
+
+[node name="StaticBody2D" parent="Mapa partes" instance=ExtResource("2_n06wi")]
+position = Vector2(1077, -6519)
+
+[node name="StaticBody2D2" parent="Mapa partes" instance=ExtResource("5_coo4y")]
+position = Vector2(-5059, -5008)
+rotation = 1.57203
+
+[node name="StaticBody2D3" parent="Mapa partes" instance=ExtResource("2_n06wi")]
+position = Vector2(-5048, -3330)
+rotation = -3.14507
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Mapa partes"]
+scroll_offset = Vector2(-755.57, -5627.84)
+
+[node name="Obstaculos" type="Node2D" parent="."]
+position = Vector2(1103, 634)
+
+[node name="StaticBody2D" parent="Obstaculos" instance=ExtResource("4_eioub")]
+position = Vector2(-387, -1946)
+
+[node name="StaticBody2D2" parent="Obstaculos" instance=ExtResource("5_8aa6g")]
+position = Vector2(-118, -1297)
+
+[node name="StaticBody2D3" parent="Obstaculos" instance=ExtResource("5_8aa6g")]
+position = Vector2(-121, -2341)
+
+[node name="StaticBody2D4" parent="Obstaculos" instance=ExtResource("5_8aa6g")]
+position = Vector2(-355, -3918)
+
+[node name="StaticBody2D17" parent="Obstaculos" instance=ExtResource("5_8aa6g")]
+position = Vector2(-2857, -5507)
+rotation = -1.58756
+
+[node name="StaticBody2D18" parent="Obstaculos" instance=ExtResource("5_8aa6g")]
+position = Vector2(-5882, -5469)
+rotation = -3.16569
+
+[node name="Sprite2D" parent="Obstaculos" instance=ExtResource("6_4bwbr")]
+position = Vector2(-781, -417)
+
+[node name="StaticBody2D5" parent="Obstaculos" instance=ExtResource("9_g0n6y")]
+position = Vector2(-351, -4311)
+
+[node name="Node2D" parent="Obstaculos" instance=ExtResource("9_q6q2j")]
+position = Vector2(-131, -711)
+
+[node name="Node2D3" parent="Obstaculos" instance=ExtResource("9_q6q2j")]
+position = Vector2(-131, -517)
+
+[node name="Node2D4" parent="Obstaculos" instance=ExtResource("9_q6q2j")]
+position = Vector2(-132, -313)
+
+[node name="Node2D2" parent="Obstaculos" instance=ExtResource("9_q6q2j")]
+position = Vector2(-128, -921)
+
+[node name="StaticBody2D6" parent="Obstaculos" instance=ExtResource("12_1bxa2")]
+position = Vector2(-112, -3249)
+
+[node name="StaticBody2D7" parent="Obstaculos" instance=ExtResource("12_1bxa2")]
+position = Vector2(-9, -5119)
+rotation = 1.55606
+
+[node name="StaticBody2D9" parent="Obstaculos" instance=ExtResource("12_5kjv5")]
+position = Vector2(-6279, -5614)
+
+[node name="StaticBody2D8" parent="Obstaculos" instance=ExtResource("12_1bxa2")]
+position = Vector2(-3890, -5512)
+rotation = 3.47215
+
+[node name="StaticBody2D10" parent="Obstaculos" instance=ExtResource("9_g0n6y")]
+position = Vector2(-756, -5795)
+
+[node name="StaticBody2D11" parent="Obstaculos" instance=ExtResource("12_5kjv5")]
+position = Vector2(-111, -5543)
+
+[node name="StaticBody2D12" parent="Obstaculos" instance=ExtResource("9_g0n6y")]
+position = Vector2(-5170, -5563)
+
+[node name="StaticBody2D14" parent="Obstaculos" instance=ExtResource("5_coo4y")]
+position = Vector2(-6142, -5924)
+
+[node name="StaticBody2D19" parent="Obstaculos" instance=ExtResource("5_coo4y")]
+position = Vector2(-6144, -10603)
+
+[node name="StaticBody2D13" parent="Obstaculos" instance=ExtResource("9_g0n6y")]
+position = Vector2(-6029, -7029)
+
+[node name="StaticBody2D15" parent="Obstaculos" instance=ExtResource("9_g0n6y")]
+position = Vector2(-6269, -8085)
+
+[node name="StaticBody2D16" parent="Obstaculos" instance=ExtResource("9_g0n6y")]
+position = Vector2(-5813, -8341)
+
+[node name="StaticBody2D20" parent="Obstaculos" instance=ExtResource("9_g0n6y")]
+position = Vector2(-6296, -9919)
+
+[node name="StaticBody2D21" parent="Obstaculos" instance=ExtResource("9_g0n6y")]
+position = Vector2(-5850, -10636)
+
+[node name="Node2D5" parent="Obstaculos" instance=ExtResource("9_q6q2j")]
+position = Vector2(-6054, -5875)
+
+[node name="Node2D6" parent="Obstaculos" instance=ExtResource("9_q6q2j")]
+position = Vector2(-2296, -5808)
+
+[node name="Node2D7" parent="Obstaculos" instance=ExtResource("9_q6q2j")]
+position = Vector2(-98, -4836)
+
+[node name="Node2D8" parent="Obstaculos" instance=ExtResource("9_q6q2j")]
+position = Vector2(101, -4493)
+
+[node name="Node2D9" parent="Obstaculos" instance=ExtResource("9_q6q2j")]
+position = Vector2(-850, -5361)
+
+[node name="Node" parent="Obstaculos" instance=ExtResource("11_2ud8b")]
+position = Vector2(-6281, -11727)
+
+[node name="Node2" parent="Obstaculos" instance=ExtResource("11_2ud8b")]
+position = Vector2(-6054, -12362)
+
+[node name="StaticBody2D22" parent="Obstaculos" instance=ExtResource("5_8aa6g")]
+position = Vector2(-6084, -10867)
+
+[node name="StaticBody2D23" parent="Obstaculos" instance=ExtResource("5_8aa6g")]
+position = Vector2(-6062, -13066)
+
+[node name="StaticBody2D24" parent="Obstaculos" instance=ExtResource("5_8aa6g")]
+position = Vector2(-6069, -14848)
+
+[node name="Node2D10" parent="Obstaculos" instance=ExtResource("14_eh0sk")]
+position = Vector2(-5899, -16402)
+
+[node name="Jugador" parent="." instance=ExtResource("14_7aqct")]
+position = Vector2(968, 919)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_a7jq8")
+autoplay = true

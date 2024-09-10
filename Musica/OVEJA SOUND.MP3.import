@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b77futn31x1lj"
+path="res://.godot/imported/OVEJA SOUND.MP3-5358f01d522c6a58f18a1a14064c8d50.mp3str"
+
+[deps]
+
+source_file="res://Musica/OVEJA SOUND.MP3"
+dest_files=["res://.godot/imported/OVEJA SOUND.MP3-5358f01d522c6a58f18a1a14064c8d50.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

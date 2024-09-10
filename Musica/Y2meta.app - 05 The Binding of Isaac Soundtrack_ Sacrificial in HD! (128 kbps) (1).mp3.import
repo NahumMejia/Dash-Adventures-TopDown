@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cxaeq5acchf5q"
+path="res://.godot/imported/Y2meta.app - 05 The Binding of Isaac Soundtrack_ Sacrificial in HD! (128 kbps) (1).mp3-3656755dac71a68f0543a0c5aa2913fd.mp3str"
+
+[deps]
+
+source_file="res://Musica/Y2meta.app - 05 The Binding of Isaac Soundtrack_ Sacrificial in HD! (128 kbps) (1).mp3"
+dest_files=["res://.godot/imported/Y2meta.app - 05 The Binding of Isaac Soundtrack_ Sacrificial in HD! (128 kbps) (1).mp3-3656755dac71a68f0543a0c5aa2913fd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

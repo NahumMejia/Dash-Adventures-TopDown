@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b0pedhj3bvf43"
+path="res://.godot/imported/Sonido de Oveja Minecraft Efecto de Sonido.mp3-eda2769b4f0e17ad4a9dcc064876a969.mp3str"
+
+[deps]
+
+source_file="res://Nivel2/Sonido de Oveja Minecraft Efecto de Sonido.mp3"
+dest_files=["res://.godot/imported/Sonido de Oveja Minecraft Efecto de Sonido.mp3-eda2769b4f0e17ad4a9dcc064876a969.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

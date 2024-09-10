@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpbr4tit6l86i"]
+
+[ext_resource type="Script" path="res://Scripts/game_over.gd" id="1_n17xh"]
+[ext_resource type="AudioStream" uid="uid://bckraijddqlnx" path="res://Musica/Undertale Game Over Theme.mp3" id="2_bjdd7"]
+[ext_resource type="FontFile" uid="uid://bs5hhjtx1h8p0" path="res://Fuentes/Gameplay.ttf" id="3_nhyie"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n17xh")
+
+[node name="musicOver" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_bjdd7")
+autoplay = true
+
+[node name="BackGround" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.027451, 0.00784314, 0.286275, 0.580392)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -180.0
+offset_right = 360.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="RichTextLabel" parent="GridContainer"]
+custom_minimum_size = Vector2(720, 150)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("3_nhyie")
+theme_override_font_sizes/normal_font_size = 100
+bbcode_enabled = true
+text = "[center][wave]¡GAME OVER![/wave]"
+
+[node name="ReintentarBtn" type="Button" parent="GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Reintentar
+"
+
+[node name="SalirBtn" type="Button" parent="GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Salir
+"
+
+[connection signal="pressed" from="GridContainer/ReintentarBtn" to="." method="_on_reintentar_btn_pressed"]
+[connection signal="pressed" from="GridContainer/SalirBtn" to="." method="_on_salir_btn_pressed"]

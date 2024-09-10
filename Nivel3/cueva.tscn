@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://be1mjtmynsoln"]
+
+[ext_resource type="Texture2D" uid="uid://ralelgtpyd8d" path="res://Modelos/cueva_j.png" id="1_bq17u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o0q8q"]
+size = Vector2(1577, 899)
+
+[node name="Node2D" type="StaticBody2D"]
+
+[node name="StaticBody2D" type="Sprite2D" parent="."]
+scale = Vector2(0.484752, 0.484752)
+texture = ExtResource("1_bq17u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-98.5, -227.5)
+shape = SubResource("RectangleShape2D_o0q8q")

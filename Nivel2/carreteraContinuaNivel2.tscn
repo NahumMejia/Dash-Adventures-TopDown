@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dadh4to32yl8n"]
+
+[ext_resource type="Texture2D" uid="uid://5kcesbvlhrnh" path="res://Modelos/CarreteraContinuaNivel2.png" id="1_c8rec"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0tu7x"]
+size = Vector2(240, 5089)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6xx2p"]
+size = Vector2(57, 5111)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(172, -3070)
+scale = Vector2(1.795, 4.427)
+texture = ExtResource("1_c8rec")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(563, -3069)
+shape = SubResource("RectangleShape2D_0tu7x")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-324, -3063)
+shape = SubResource("RectangleShape2D_6xx2p")

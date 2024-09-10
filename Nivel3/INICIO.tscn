@@ -1,0 +1,74 @@
+[gd_scene load_steps=4 format=3 uid="uid://ddh371jjernss"]
+
+[ext_resource type="FontFile" uid="uid://bs5hhjtx1h8p0" path="res://Fuentes/Gameplay.ttf" id="1_ethxl"]
+[ext_resource type="Script" path="res://Nivel3/INICIO.gd" id="1_ohbt0"]
+[ext_resource type="AudioStream" uid="uid://dyk5f2k6d1pew" path="res://Nivel3/0819asd.MP3" id="3_dybmw"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ohbt0")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="GridContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -977.0
+offset_top = -377.0
+offset_right = 978.0
+offset_bottom = 714.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="RichTextLabel" parent="GridContainer"]
+custom_minimum_size = Vector2(720, 150)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_ethxl")
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center][wave]Inicio[/wave][center]"
+
+[node name="Label2" type="Label" parent="GridContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_ethxl")
+theme_override_font_sizes/font_size = 30
+text = "En la ciudad de Whiskerwood, Dash, un león experto en ciberseguridad, 
+enfrenta un desafío inesperado cuando Olivia, una cebra conocida 
+como la \"maestra del hackeo\", 
+intenta robar datos cruciales de un proyecto 
+de inteligencia artificial en el que Dash ha trabajado. 
+Olivia busca dominar la tecnología y el control de la ciudad, 
+y Dash, armado con sus habilidades 
+y 
+herramientas avanzadas, 
+es la única esperanza para detenerla. 
+En una persecución frenética por las calles y la red, 
+Dash debe desentrañar el misterio detrás de Olivia."
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 60
+text = "Continuar al juego"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dybmw")
+autoplay = true
+
+[connection signal="pressed" from="GridContainer/Button" to="." method="_on_button_pressed"]

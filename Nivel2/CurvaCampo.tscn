@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://74vvlmicuc28"]
+
+[ext_resource type="Texture2D" uid="uid://cohahcrxec5rt" path="res://Modelos/curvaCampo2.png" id="1_hkkj7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ma21g"]
+size = Vector2(56.5, 510.5)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 1471.48)
+scale = Vector2(1.795, 1.87235)
+texture = ExtResource("1_hkkj7")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="."]
+position = Vector2(-497.75, 2231.25)
+shape = SubResource("RectangleShape2D_ma21g")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(271, 2465, 263, 1320, 202, 1269, 197, 1219, -504, 1194, -520, 952, 518, 952, 523, 2474)

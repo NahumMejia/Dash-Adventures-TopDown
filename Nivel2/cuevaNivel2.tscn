@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dch2wfkkhiqwa"]
+
+[ext_resource type="Script" path="res://Nivel2/cuevaGod2.gd" id="1_3t4yi"]
+[ext_resource type="Texture2D" uid="uid://ralelgtpyd8d" path="res://Modelos/cueva_j.png" id="2_voe7c"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_3t4yi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("2_voe7c")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-648, 345, -632, 237, -654, 18, -654, -493, 501, -490, 504, 294, 514, 340, 469, 340, 419, 219, 358, 210, 323, 178, 219, 153, 196, 127, 120, 127, 130, 165, 63, 165, 19, 162, -73, 156, -156, 130, -204, 121, -235, 156, -353, 207, -410, 204, -442, 197, -486, 226, -537, 232, -546, 296, -566, 365)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

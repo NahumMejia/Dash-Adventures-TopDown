@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://be7ih2icjjvev"]
+
+[ext_resource type="PackedScene" uid="uid://siwcdwjkxre1" path="res://Escenas/pause_menu.tscn" id="1_axyu0"]
+[ext_resource type="PackedScene" uid="uid://bucmta727kin3" path="res://Nivel3/CARRETERAPLAYA.tscn" id="2_hk5yr"]
+
+[node name="Nivel3" type="Node2D"]
+
+[node name="PAUSA" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="PAUSA" instance=ExtResource("1_axyu0")]
+visible = false
+
+[node name="Partes del Mapa" type="Node2D" parent="."]
+
+[node name="Partes del mapa" type="Node2D" parent="."]
+
+[node name="Inicio" parent="Partes del mapa" instance=ExtResource("2_hk5yr")]
+position = Vector2(585, 6655)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_hk5yr")]
+position = Vector2(585, 1460)

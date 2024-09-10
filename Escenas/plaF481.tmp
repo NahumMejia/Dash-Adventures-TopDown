@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://imsnmd417r8p"]
+
+[ext_resource type="Script" path="res://Escenas/playerFinal.gd" id="1_j31yk"]
+[ext_resource type="Texture2D" uid="uid://yiyhdnbio3s5" path="res://Modelos/D2_Vista aerea.png" id="1_y7v0t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i5uko"]
+size = Vector2(120, 195)
+
+[node name="Jugador" type="CharacterBody2D"]
+script = ExtResource("1_j31yk")
+wheel_base = null
+steering_angle = null
+engine_power = null
+friction = null
+drag = null
+braking = null
+max_speed_reversed = null
+slip_speed = null
+traction_fast = null
+traction_slow = null
+
+[node name="D2VistaAerea" type="Sprite2D" parent="."]
+scale = Vector2(0.178571, 0.194196)
+texture = ExtResource("1_y7v0t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -5)
+shape = SubResource("RectangleShape2D_i5uko")
+
+[node name="Camera2D" type="Camera2D" parent="."]

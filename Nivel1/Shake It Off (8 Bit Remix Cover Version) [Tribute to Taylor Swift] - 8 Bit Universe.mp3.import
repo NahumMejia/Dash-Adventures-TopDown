@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://xwhy4f4wf764"
+path="res://.godot/imported/Shake It Off (8 Bit Remix Cover Version) [Tribute to Taylor Swift] - 8 Bit Universe.mp3-f618890c0f41c5e95ba88323796e62ed.mp3str"
+
+[deps]
+
+source_file="res://Nivel1/Shake It Off (8 Bit Remix Cover Version) [Tribute to Taylor Swift] - 8 Bit Universe.mp3"
+dest_files=["res://.godot/imported/Shake It Off (8 Bit Remix Cover Version) [Tribute to Taylor Swift] - 8 Bit Universe.mp3-f618890c0f41c5e95ba88323796e62ed.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

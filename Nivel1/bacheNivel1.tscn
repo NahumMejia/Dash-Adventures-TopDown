@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://cm3162eroddyr"]
+
+[ext_resource type="Texture2D" uid="uid://djaxfpjtr1mlu" path="res://Modelos/Obs_Ciudad.png" id="1_do6me"]
+[ext_resource type="Script" path="res://Scripts/bacheScript.gd" id="1_xjbic"]
+[ext_resource type="AudioStream" uid="uid://csmd5dwcmbmdw" path="res://Musica/damage_sound.MP3" id="3_ib1p6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_muwj4"]
+radius = 62.0322
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oyopn"]
+radius = 75.0267
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_xjbic")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.99998, 25)
+scale = Vector2(0.506944, 0.463542)
+texture = ExtResource("1_do6me")
+
+[node name="Mapa" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_muwj4")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="damage" type="AudioStreamPlayer2D" parent="Area2D"]
+stream = ExtResource("3_ib1p6")
+volume_db = 11.556
+
+[node name="Jugador" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_oyopn")
+debug_color = Color(0.507606, 0.433267, 0.00172539, 0.42)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

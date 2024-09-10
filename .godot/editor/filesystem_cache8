@@ -1,0 +1,142 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1725943200
+export_presets.cfg::TextFile::-1::1725942756::0::1::::<><>::
+global.gd::GDScript::-1::1723608444::0::1::::<>Node<>::
+global.tscn::PackedScene::5680201128355280102::1723609365::0::1::::<><>::res://global.gd
+::res://Escenas/::1725942665
+game_overNivel2.tscn::PackedScene::276683697357659877::1724116454::0::1::::<><>::res://Scripts/game_over.gd<>uid://bckraijddqlnx::::res://Musica/Undertale Game Over Theme.mp3<>uid://bs5hhjtx1h8p0::::res://Fuentes/Gameplay.ttf
+hongoDecoracion.tscn::PackedScene::6928302274226790644::1723559424::0::1::::<><>::uid://cod0fchcsql4n::::res://Modelos/Mushroom-Idle.png
+menu.tscn::PackedScene::498590809397936711::1724118330::0::1::::<><>::res://Scripts/menuScript.gd<>res://Scripts/movimientoFondoMenu.gd<>uid://g54ecby05hwj::::res://Modelos/Logo-Dash.png<>uid://ckl1205wdra7g::::res://Modelos/Fondo1-Menu.png<>uid://bsdpk8m43yhnn::::res://Musica/Gamesounds_Foundry_-_Disco_Saga_-_Menu.wav<>uid://bs5hhjtx1h8p0::::res://Fuentes/Gameplay.ttf
+moneda.tscn::PackedScene::2542755106132831116::1723609213::0::1::::<><>::res://Scripts/Coin2D.gd<>uid://bs05nfkxt2xkc::::res://Modelos/coin_gold.png<>uid://btwewr20hfuvq::::res://Musica/coin_sonido.MP3
+panelSped.tscn::PackedScene::6488245942987916750::1723610822::0::1::::<><>::uid://bktijdqyeif3s::::res://Modelos/panelVelocidad.png<>res://Scripts/PanelSpeed.gd<>uid://cxovc4a7dtyuo::::res://Musica/spin.MP3
+pause_menu.tscn::PackedScene::1281253744924686686::1723485281::0::1::::<><>::res://Scripts/PauseMenu.gd
+playa.png::CompressedTexture2D::213164276475991759::1723610731::1723610731::1::::<><>::
+playerFinal.tscn::PackedScene::587400039611801909::1725942665::0::1::::<><>::res://Scripts/playerFinal.gd<>uid://yiyhdnbio3s5::::res://Modelos/D2_Vista aerea.png<>uid://cejqdc50qsvvb::::res://Modelos/Dash_Choque.png<>uid://b40j3egcls1bp::::res://Modelos/9_brightfire_spritesheet.png<>uid://dy5hi1cxqinsl::::res://Modelos/coin.png<>uid://bs5hhjtx1h8p0::::res://Fuentes/Gameplay.ttf<>uid://bsyk7dymrcvvj::::res://Modelos/Vidas_Juego.png<>uid://dbp0saeatq3om::::res://Modelos/VidasVacía_Juego-1.png.png
+::res://Fuentes/::1721845322
+Gameplay.ttf::FontFile::3712189224447685267::1464972608::1721845322::1::::<><>::
+game_over.ttf::FontFile::4949855878580634963::1241368816::1721845322::1::::<><>::
+::res://Modelos/::1724113909
+9_brightfire_spritesheet.png::CompressedTexture2D::4474103267680305049::1723531546::1723531555::1::::<><>::
+A.png::CompressedTexture2D::9111312201179768633::1723404431::1723404431::1::::<><>::
+carreteraContinuallvl4.png::CompressedTexture2D::5152342964020420814::1724113797::1724113836::1::::<><>::
+CarreteraContinuaNivel2.png::CompressedTexture2D::2126438611776967629::1723598821::1723598821::1::::<><>::
+carreteraLevel1.png::CompressedTexture2D::4278348831877637331::1719855342::1719856902::1::::<><>::
+carreteraLevel2.png::CompressedTexture2D::4712961297653931959::1720571532::1723529464::1::::<><>::
+carreteraLevel4-1.png.png::CompressedTexture2D::6923577712130578359::1724113909::1724113909::1::::<><>::
+carreteraLevel4.png::CompressedTexture2D::2670590292883918756::1720637372::1721845211::1::::<><>::
+carreteraNivel1continuo.png::CompressedTexture2D::3843952271927965498::1722737059::1722737114::1::::<><>::
+coin.png::CompressedTexture2D::8906166306077916867::1723048665::1723048677::1::::<><>::
+coin_gold.png::CompressedTexture2D::3703274317269224090::1723048832::1723048833::1::::<><>::
+coin_small_gold.png::CompressedTexture2D::7755742690940806952::1723049431::1723049432::1::::<><>::
+cueva_j.png::CompressedTexture2D::1193885959852545281::1723567591::1723567603::1::::<><>::
+curva1.png::CompressedTexture2D::8093768296139055965::1723563065::1723563083::1::::<><>::
+curvaCampo2.png::CompressedTexture2D::5769948455513257533::1723598982::1723598973::1::::<><>::
+curvalevel4_.png::CompressedTexture2D::6133124172784980650::1723564445::1723564447::1::::<><>::
+D2_Vista aerea.png::CompressedTexture2D::1702517155438202050::1719855337::1719856902::1::::<><>::
+D.png::CompressedTexture2D::6150094018564073999::1723404431::1723404431::1::::<><>::
+Dash_Choque.png::CompressedTexture2D::5073153123539679951::1721197138::1721845211::1::::<><>::
+Fondo1-Menu.png::CompressedTexture2D::5499066177740687422::1719452714::1721845212::1::::<><>::
+hoyo.png::CompressedTexture2D::3612382759312912027::1720069369::1720069393::1::::<><>::
+Logo-Dash.png::CompressedTexture2D::484832438132385873::1719517682::1721845211::1::::<><>::
+Memoria_L1.png::CompressedTexture2D::3304028888785445676::1720574846::1721845212::1::::<><>::
+Moneda_Game.png::CompressedTexture2D::5775718664663413192::1720570086::1721845212::1::::<><>::
+Mushroom-Idle.png::CompressedTexture2D::5763205281345419571::1723558495::1723558516::1::::<><>::
+Obs1_Nieve.png::CompressedTexture2D::1831307418764643998::1721784238::1721845213::1::::<><>::
+Obs2_Campo.png::CompressedTexture2D::4885724878131840479::1720559920::1721845212::1::::<><>::
+Obs2_Playa.png::CompressedTexture2D::2878899540864306697::1720563752::1721845212::1::::<><>::
+Obs_Campo.png::CompressedTexture2D::734319741254881838::1720555756::1721845212::1::::<><>::
+Obs_Ciudad.png::CompressedTexture2D::7792367866265266618::1720571628::1721845212::1::::<><>::
+Obs_Noche.png::CompressedTexture2D::8815203049524460457::1721785962::1721845214::1::::<><>::
+Obs_Playa.png::CompressedTexture2D::5880606258263167782::1720561656::1721845213::1::::<><>::
+Olivia_npc.png::CompressedTexture2D::7995293751297300972::1721195004::1721845213::1::::<><>::
+panelVelocidad.png::CompressedTexture2D::3128034288870874206::1723562193::1723562233::1::::<><>::
+pisoNivel1.png::CompressedTexture2D::3333793017385325263::1723529502::1723529503::1::::<><>::
+Prototipo_Personaje.png::CompressedTexture2D::6689707480344490558::1720558182::1721845213::1::::<><>::
+S.png::CompressedTexture2D::1773757579635606961::1723404431::1723404431::1::::<><>::
+Solaria Demo Tiles.png::CompressedTexture2D::5556240981832878304::1721762969::1721762969::1::::<><>::
+Solaria Palette.png::CompressedTexture2D::979055957015532635::1721762838::1721762838::1::::<><>::
+suelo.jpg::CompressedTexture2D::1714138850398984674::1720397032::1720397038::1::::<><>::
+VidasVacía_Juego-1.png.png::CompressedTexture2D::7261966636342951688::1723047731::1723047731::1::::<><>::
+Vidas_Juego.png::CompressedTexture2D::3700029445821142727::1723047731::1723047731::1::::<><>::
+W.png::CompressedTexture2D::8045051173168814884::1723404431::1723404431::1::::<><>::
+::res://Musica/::1724113554
+coin_sonido.MP3::AudioStreamMP3::3765708114594136994::1723531115::1723531117::1::::<><>::
+damage_sound.MP3::AudioStreamMP3::6061249002377656372::1723533348::1723535616::1::::<><>::
+Gamesounds_Foundry_-_Disco_Saga_-_Menu.wav::AudioStreamWAV::3656943368434613507::1719538600::1721847126::1::::<><>::
+musicaNivel1.mp3::AudioStreamMP3::7501459198103273144::1723529394::1723530476::1::::<><>::
+OVEJA SOUND.MP3::AudioStreamMP3::4698864088415961599::1723603644::1723603644::1::::<><>::
+Special Stage - Sonic the Hedgehog 2 [OST].mp3::AudioStreamMP3::8460219155379728676::1724113554::1724113554::1::::<><>::
+spin.MP3::AudioStreamMP3::6417366212689561310::1723565934::1723565939::1::::<><>::
+Undertale Game Over Theme.mp3::AudioStreamMP3::2548474771617791693::1723535626::1723535626::1::::<><>::
+Y2meta.app - 05 The Binding of Isaac Soundtrack_ Sacrificial in HD! (128 kbps) (1).mp3::AudioStreamMP3::6387457787528820920::1723603070::1723603082::1::::<><>::
+::res://Nivel1/::1725942664
+bacheNivel1.tscn::PackedScene::5674545494680148965::1723606977::0::1::::<><>::uid://djaxfpjtr1mlu::::res://Modelos/Obs_Ciudad.png<>res://Scripts/bacheScript.gd<>uid://csmd5dwcmbmdw::::res://Musica/damage_sound.MP3
+carretera.tscn::PackedScene::6083539208277222986::1723565181::0::1::::<><>::uid://b17p1r5phuaoh::::res://Modelos/carreteraLevel1.png
+carreteraContinuaNivel1.tscn::PackedScene::5575042308977058004::1724111285::0::1::::<><>::uid://bu1blkfec0s3s::::res://Modelos/carreteraNivel1continuo.png
+cuevaNivel1.tscn::PackedScene::2584017931678258725::1724116856::0::1::::<><>::res://Scripts/CuevaCambio.gd<>uid://ralelgtpyd8d::::res://Modelos/cueva_j.png
+ERA - Ameno (Official Video).mp3::AudioStreamMP3::2658983239708152527::1724117455::1724117617::1::::<><>::
+game_overNivel1.tscn::PackedScene::8215244071511379666::1723606068::0::1::::<><>::res://Scripts/game_over.gd<>uid://bckraijddqlnx::::res://Musica/Undertale Game Over Theme.mp3<>uid://bs5hhjtx1h8p0::::res://Fuentes/Gameplay.ttf
+Instrucciones principales.tscn::PackedScene::3381297549392755109::1723597375::0::1::::<><>::uid://bs5hhjtx1h8p0::::res://Fuentes/Gameplay.ttf<>res://Scripts/Instrucciones principales.gd<>uid://dmvc217c82w6g::::res://Modelos/W.png<>uid://d22t8l1lxgv0t::::res://Modelos/A.png<>uid://bsyk7dymrcvvj::::res://Modelos/Vidas_Juego.png<>uid://dy5hi1cxqinsl::::res://Modelos/coin.png<>uid://0jhr7t42h8v2::::res://Modelos/S.png<>uid://ctvffdlp6ubn8::::res://Modelos/D.png<>uid://dxufdu5lyrebp::::res://Modelos/Obs_Noche.png<>uid://bktijdqyeif3s::::res://Modelos/panelVelocidad.png
+loading_screenNivel1.tscn::PackedScene::6861556191250429376::1724109499::0::1::::<><>::res://Scripts/loading_screen.gd<>uid://g54ecby05hwj::::res://Modelos/Logo-Dash.png<>uid://bs5hhjtx1h8p0::::res://Fuentes/Gameplay.ttf
+nivel1.tscn::PackedScene::1483519754616085823::1725942664::0::1::::<><>::uid://bnq6c4aro00bb::::res://Modelos/pisoNivel1.png<>uid://siwcdwjkxre1::::res://Escenas/pause_menu.tscn<>uid://bof6qg8i2lra0::::res://Nivel1/Instrucciones principales.tscn<>uid://cloueq7d5y1si::::res://Nivel1/carreteraContinuaNivel1.tscn<>uid://csw6acioadlju::::res://Nivel1/carretera.tscn<>uid://cmdeqbgmfyu3l::::res://Nivel1/obstaculoNivel1.tscn<>uid://cm3162eroddyr::::res://Nivel1/bacheNivel1.tscn<>uid://bchy2mxr5fxyy::::res://Escenas/moneda.tscn<>uid://c5yeej553swee::::res://Escenas/hongoDecoracion.tscn<>uid://cyo7py6nlhvja::::res://Escenas/panelSped.tscn<>uid://imsnmd417r8p::::res://Escenas/playerFinal.tscn<>uid://bc2ynr4lexath::::res://Nivel1/cuevaNivel1.tscn<>uid://de4064gqaycou::::res://Musica/musicaNivel1.mp3
+obstaculoNivel1.tscn::PackedScene::5621572127323365027::1724115435::0::1::::<><>::res://Scripts/obstaculoNivel1.gd<>uid://dxufdu5lyrebp::::res://Modelos/Obs_Noche.png<>uid://csmd5dwcmbmdw::::res://Musica/damage_sound.MP3
+Shake It Off (8 Bit Remix Cover Version) [Tribute to Taylor Swift] - 8 Bit Universe.mp3::AudioStreamMP3::1660229124515580195::1724117283::1724117284::1::::<><>::
+::res://Nivel2/::1725942665
+bacheNivel2.gd::GDScript::-1::1723604294::0::1::::<>StaticBody2D<>::
+bacheNivel2.tscn::PackedScene::7862912779396835219::1723609324::0::1::::<><>::uid://brp4ofhc2doet::::res://Modelos/hoyo.png<>res://Nivel2/bacheNivel2.gd<>uid://csmd5dwcmbmdw::::res://Musica/damage_sound.MP3
+carreteraContinuaNivel2.tscn::PackedScene::7165933012194234379::1724113735::0::1::::<><>::uid://5kcesbvlhrnh::::res://Modelos/CarreteraContinuaNivel2.png
+carreteraInicioNivel2.tscn::PackedScene::7792974711033118932::1724109090::0::1::::<><>::uid://b8e81wkls3jqt::::res://Modelos/carreteraLevel2.png
+cueva2.gd::GDScript::-1::1724115676::0::1::::<>Node2D<>::
+cuevaGod2.gd::GDScript::-1::1724115792::0::1::::<>Node<>::
+cuevaNivel2.gd::GDScript::-1::1724115622::0::1::::<>Node<>::
+cuevaNivel2.tscn::PackedScene::7315769307433225756::1724115798::0::1::::<><>::res://Nivel2/cuevaGod2.gd<>uid://ralelgtpyd8d::::res://Modelos/cueva_j.png
+CurvaCampo.tscn::PackedScene::2307223106466318335::1725942665::0::1::::<><>::uid://cohahcrxec5rt::::res://Modelos/curvaCampo2.png
+moneda2.tscn::PackedScene::3693097868296290825::1723609316::0::1::::<><>::uid://btwewr20hfuvq::::res://Musica/coin_sonido.MP3<>res://Scripts/Coin2D.gd<>uid://bs05nfkxt2xkc::::res://Modelos/coin_gold.png
+nivel2.gd::GDScript::-1::1724110032::0::1::::<>Node2D<>::
+nivel2.tscn::PackedScene::6468230060312725612::1725942664::0::1::::<><>::res://Nivel2/nivel2.gd<>uid://siwcdwjkxre1::::res://Escenas/pause_menu.tscn<>uid://74vvlmicuc28::::res://Nivel2/CurvaCampo.tscn<>uid://dja8fjdc8424w::::res://Nivel2/carreteraInicioNivel2.tscn<>uid://bt3lu5ut3km6q::::res://Nivel2/oveja.tscn<>uid://cyo7py6nlhvja::::res://Escenas/panelSped.tscn<>uid://dadh4to32yl8n::::res://Nivel2/carreteraContinuaNivel2.tscn<>uid://c5yeej553swee::::res://Escenas/hongoDecoracion.tscn<>uid://dka4a3spd4o0r::::res://Nivel2/bacheNivel2.tscn<>uid://bsu71umnx8g70::::res://Nivel2/moneda2.tscn<>uid://bchy2mxr5fxyy::::res://Escenas/moneda.tscn<>uid://bi2d0ohowfreo::::res://Nivel2/tronco.tscn<>uid://cm3162eroddyr::::res://Nivel1/bacheNivel1.tscn<>uid://imsnmd417r8p::::res://Escenas/playerFinal.tscn<>uid://dch2wfkkhiqwa::::res://Nivel2/cuevaNivel2.tscn<>uid://dssgtq5kwmm1a::::res://Musica/Special Stage - Sonic the Hedgehog 2 [OST].mp3
+OVEJA SOUND.MP3::AudioStreamMP3::6869223826447462615::1723603627::1723603615::1::::<><>::
+oveja.gd::GDScript::-1::1723603817::0::1::::<>StaticBody2D<>::
+oveja.tscn::PackedScene::3778516500225610190::1723607029::0::1::::<><>::uid://cbuxf7hotx2h4::::res://Modelos/Obs2_Campo.png<>res://Nivel2/oveja.gd<>uid://csmd5dwcmbmdw::::res://Musica/damage_sound.MP3<>uid://b77futn31x1lj::::res://Musica/OVEJA SOUND.MP3
+playerFinal2.gd::GDScript::-1::1723608612::0::1::::player<>CharacterBody2D<>::
+playerFinal2.tscn::PackedScene::943506195904531473::1723609213::0::1::::<><>::uid://cejqdc50qsvvb::::res://Modelos/Dash_Choque.png<>res://Nivel2/playerFinal2.gd<>uid://yiyhdnbio3s5::::res://Modelos/D2_Vista aerea.png<>uid://b40j3egcls1bp::::res://Modelos/9_brightfire_spritesheet.png<>uid://bs5hhjtx1h8p0::::res://Fuentes/Gameplay.ttf<>uid://dy5hi1cxqinsl::::res://Modelos/coin.png<>uid://bsyk7dymrcvvj::::res://Modelos/Vidas_Juego.png<>uid://dbp0saeatq3om::::res://Modelos/VidasVacía_Juego-1.png.png
+Sonido de Oveja Minecraft Efecto de Sonido.mp3::AudioStreamMP3::4172356049148638978::1723602882::1723602883::1::::<><>::
+tronco.gd::GDScript::-1::1723606893::0::1::::<>StaticBody2D<>::
+tronco.tscn::PackedScene::3003897174789140450::1724116856::0::1::::<><>::uid://kpyeyrqjou2i::::res://Modelos/Obs_Campo.png<>res://Nivel2/tronco.gd<>uid://csmd5dwcmbmdw::::res://Musica/damage_sound.MP3
+::res://Nivel3/::1725942665
+0819asd.MP3::AudioStreamMP3::8866269949677241146::1724118322::1724118322::1::::<><>::
+CARRETERA.tscn::PackedScene::4598087493488286356::1723611880::0::1::::<><>::uid://bebwh5enmalts::::res://Modelos/carreteraLevel4.png
+carreteraContinuaNivel3.tscn::PackedScene::7193458650696368393::1724115435::0::1::::<><>::uid://c5v3kwi0rw3sd::::res://Modelos/carreteraLevel4-1.png.png
+carreteraNivel3Inicio.tscn::PackedScene::1687526548851551804::1724113754::0::1::::<><>::uid://bebwh5enmalts::::res://Modelos/carreteraLevel4.png
+CARRETERAPLAYA.tscn::PackedScene::3795088896662922150::1724111322::0::1::::<><>::
+cueva.tscn::PackedScene::2721595573498978715::1724116856::0::1::::<><>::uid://ralelgtpyd8d::::res://Modelos/cueva_j.png
+end.gd::GDScript::-1::1723611977::0::1::::<>Control<>::
+end.tscn::PackedScene::8926213363954020590::1725942665::0::1::::<><>::uid://bs5hhjtx1h8p0::::res://Fuentes/Gameplay.ttf<>res://Nivel3/end.gd
+INICIO.gd::GDScript::-1::1724117035::0::1::::<>Control<>::
+INICIO.tscn::PackedScene::7386037827399527890::1725942665::0::1::::<><>::uid://bs5hhjtx1h8p0::::res://Fuentes/Gameplay.ttf<>res://Nivel3/INICIO.gd<>uid://dyk5f2k6d1pew::::res://Nivel3/0819asd.MP3
+jugador_final_3.gd::GDScript::-1::1723608380::0::1::::playerr<>CharacterBody2D<>::
+jugador_final_3.tscn::PackedScene::2401195883016748961::1723608469::0::1::::<><>::res://Nivel3/jugador_final_3.gd<>uid://cejqdc50qsvvb::::res://Modelos/Dash_Choque.png<>uid://yiyhdnbio3s5::::res://Modelos/D2_Vista aerea.png<>uid://b40j3egcls1bp::::res://Modelos/9_brightfire_spritesheet.png<>uid://bs5hhjtx1h8p0::::res://Fuentes/Gameplay.ttf<>uid://dy5hi1cxqinsl::::res://Modelos/coin.png<>uid://bsyk7dymrcvvj::::res://Modelos/Vidas_Juego.png<>uid://dbp0saeatq3om::::res://Modelos/VidasVacía_Juego-1.png.png
+MEMORIA.gd::GDScript::-1::1723611795::0::1::::<>Node2D<>::
+MEMORIA.tscn::PackedScene::643222895305279311::1724116856::0::1::::<><>::res://Nivel3/MEMORIA.gd<>uid://bncq4xjjy022c::::res://Modelos/Memoria_L1.png
+Nieve.gd::GDScript::-1::1724114295::0::1::::<>StaticBody2D<>::
+Nieve.tscn::PackedScene::7996278712606562531::1724115435::0::1::::<><>::uid://1ddmowyeb1os::::res://Modelos/Obs1_Nieve.png<>res://Nivel3/Nieve.gd<>uid://csmd5dwcmbmdw::::res://Musica/damage_sound.MP3
+nivel3.tscn::PackedScene::5514630335675740862::1725942665::0::1::::<><>::uid://siwcdwjkxre1::::res://Escenas/pause_menu.tscn<>uid://ybpky7venuxw::::res://Nivel3/carreteraNivel3Inicio.tscn<>uid://imsnmd417r8p::::res://Escenas/playerFinal.tscn<>uid://dl6psoxycs15p::::res://Nivel3/Nieve.tscn<>uid://cmdeqbgmfyu3l::::res://Nivel1/obstaculoNivel1.tscn<>uid://daqthihy56se8::::res://Nivel3/carreteraContinuaNivel3.tscn<>uid://cyo7py6nlhvja::::res://Escenas/panelSped.tscn<>uid://cm3162eroddyr::::res://Nivel1/bacheNivel1.tscn<>uid://c5yeej553swee::::res://Escenas/hongoDecoracion.tscn<>uid://bchy2mxr5fxyy::::res://Escenas/moneda.tscn<>uid://be1mjtmynsoln::::res://Nivel3/cueva.tscn<>uid://bi2d0ohowfreo::::res://Nivel2/tronco.tscn<>uid://jft105s7c4h4::::res://Nivel3/MEMORIA.tscn<>uid://xwhy4f4wf764::::res://Nivel1/Shake It Off (8 Bit Remix Cover Version) [Tribute to Taylor Swift] - 8 Bit Universe.mp3
+nivel_3.tscn::PackedScene::2733735813466774665::1724111285::0::1::::<><>::uid://siwcdwjkxre1::::res://Escenas/pause_menu.tscn<>uid://bucmta727kin3::::res://Nivel3/CARRETERAPLAYA.tscn
+playa (1).png::CompressedTexture2D::4723163884694032642::1724110600::1724110600::1::::<><>::
+playaContinuo.tscn::PackedScene::4906518538653731159::1724111004::0::1::::<><>::uid://b8j6235u6bsys::::res://Nivel3/playa (1).png
+::res://Scripts/::1724118302
+bacheScript.gd::GDScript::-1::1723578634::0::1::::<>StaticBody2D<>::
+Coin2D.gd::GDScript::-1::1723609316::0::1::::<>Area2D<>::
+CuevaCambio.gd::GDScript::-1::1724109711::0::1::::<>Node<>::
+game_over.gd::GDScript::-1::1723605270::0::1::::<>Control<>::
+Instrucciones principales.gd::GDScript::-1::1723525503::0::1::::<>Control<>::
+Jugador.gd::GDScript::-1::1719881030::0::1::::<>CharacterBody2D<>::
+loading_screen.gd::GDScript::-1::1723600853::0::1::::<>Control<>::
+menuScript.gd::GDScript::-1::1724118302::0::1::::<>Control<>::
+moneda2DPRUEBA.gd::GDScript::-1::1723533534::0::1::::<>Node2D<>::
+movimientoFondoMenu.gd::GDScript::-1::1723040107::0::1::::<>ParallaxBackground<>::
+obstaculoNivel1.gd::GDScript::-1::1723578635::0::1::::<>StaticBody2D<>::
+PanelSpeed.gd::GDScript::-1::1723610704::0::1::::<>Area2D<>::
+PauseMenu.gd::GDScript::-1::1723044838::0::1::::<>Control<>::
+playerFinal.gd::GDScript::-1::1724109975::0::1::::player<>CharacterBody2D<>::
+scriptFondoMenu.gd::GDScript::-1::1719540414::0::1::::<>ParallaxBackground<>::
+::res://Videos/::1723572748

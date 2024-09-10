@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://csw6acioadlju"]
+
+[ext_resource type="Texture2D" uid="uid://b17p1r5phuaoh" path="res://Modelos/carreteraLevel1.png" id="1_6mted"]
+[ext_resource type="Script" path="res://Escenas/Sprite2D.gd" id="2_crynw"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(225.5, 23.5)
+scale = Vector2(0.779514, 0.999132)
+texture = ExtResource("1_6mted")
+script = ExtResource("2_crynw")

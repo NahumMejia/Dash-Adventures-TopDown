@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://daqthihy56se8"]
+
+[ext_resource type="Texture2D" uid="uid://c5v3kwi0rw3sd" path="res://Modelos/carreteraLevel4-1.png.png" id="1_xbqhw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0tu7x"]
+size = Vector2(240, 5089)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6xx2p"]
+size = Vector2(57, 5111)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(172, -3070)
+scale = Vector2(1.795, 4.427)
+texture = ExtResource("1_xbqhw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(563, -3069)
+shape = SubResource("RectangleShape2D_0tu7x")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-324, -3063)
+shape = SubResource("RectangleShape2D_6xx2p")

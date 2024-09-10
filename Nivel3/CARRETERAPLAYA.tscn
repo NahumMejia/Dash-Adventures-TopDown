@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bucmta727kin3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ce6id"]
+size = Vector2(320, 5273.43)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bupxo"]
+size = Vector2(1084, 57)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(602, -3108)
+shape = SubResource("RectangleShape2D_ce6id")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-449, -3108)
+shape = SubResource("RectangleShape2D_ce6id")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(125, -469)
+shape = SubResource("RectangleShape2D_bupxo")

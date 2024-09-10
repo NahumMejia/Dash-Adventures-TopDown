@@ -1,0 +1,279 @@
+[gd_scene load_steps=23 format=3 uid="uid://npbn6be1nx02"]
+
+[ext_resource type="Texture2D" uid="uid://cejqdc50qsvvb" path="res://Modelos/Dash_Choque.png" id="1_4hkhq"]
+[ext_resource type="Script" path="res://Nivel2/playerFinal2.gd" id="1_5a1ux"]
+[ext_resource type="Texture2D" uid="uid://yiyhdnbio3s5" path="res://Modelos/D2_Vista aerea.png" id="2_5k0ao"]
+[ext_resource type="Texture2D" uid="uid://b40j3egcls1bp" path="res://Modelos/9_brightfire_spritesheet.png" id="3_gtw50"]
+[ext_resource type="FontFile" uid="uid://bs5hhjtx1h8p0" path="res://Fuentes/Gameplay.ttf" id="4_1qper"]
+[ext_resource type="Texture2D" uid="uid://dy5hi1cxqinsl" path="res://Modelos/coin.png" id="5_r7npa"]
+[ext_resource type="Texture2D" uid="uid://bsyk7dymrcvvj" path="res://Modelos/Vidas_Juego.png" id="6_h3ilm"]
+[ext_resource type="Texture2D" uid="uid://dbp0saeatq3om" path="res://Modelos/VidasVacía_Juego-1.png.png" id="7_wv6bx"]
+
+[sub_resource type="Animation" id="Animation_6swh1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_bunc5"]
+resource_name = "muerte"
+length = 0.4
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 0), Vector2i(0, 0), Vector2i(1, 0), Vector2i(0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_agg7i"]
+_data = {
+"RESET": SubResource("Animation_6swh1"),
+"muerte": SubResource("Animation_bunc5")
+}
+
+[sub_resource type="Animation" id="Animation_pe18w"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_haeqc"]
+resource_name = "new_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.4, 0.5, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 1), Vector2i(0, 3), Vector2i(0, 5), Vector2i(0, 6), Vector2i(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uphwd"]
+_data = {
+"RESET": SubResource("Animation_pe18w"),
+"new_animation": SubResource("Animation_haeqc")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1c11w"]
+size = Vector2(72, 122.688)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jvqk0"]
+bg_color = Color(1, 1, 1, 0.768627)
+border_color = Color(1, 1, 1, 0.192157)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_bt2bg"]
+font = ExtResource("4_1qper")
+font_size = 30
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wd6ir"]
+font_size = 30
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_808hm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Moneda:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_xxd15"]
+resource_name = "monedaGUI"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Moneda:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e1x57"]
+_data = {
+"RESET": SubResource("Animation_808hm"),
+"monedaGUI": SubResource("Animation_xxd15")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_akqwl"]
+bg_color = Color(1, 1, 1, 0.768627)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="JugadorNivel2" type="CharacterBody2D"]
+script = ExtResource("1_5a1ux")
+
+[node name="MuerteAnimacion" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(2, 2)
+scale = Vector2(0.385417, 0.373264)
+texture = ExtResource("1_4hkhq")
+hframes = 2
+vframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MuerteAnimacion"]
+libraries = {
+"": SubResource("AnimationLibrary_agg7i")
+}
+autoplay = "muerte"
+
+[node name="D2VistaAerea" type="Sprite2D" parent="."]
+scale = Vector2(0.106306, 0.118024)
+texture = ExtResource("2_5k0ao")
+
+[node name="Tubo" type="Sprite2D" parent="D2VistaAerea"]
+position = Vector2(-159.308, 725.717)
+rotation = -3.14159
+scale = Vector2(16.4146, 15.803)
+texture = ExtResource("3_gtw50")
+hframes = 7
+vframes = 8
+frame = 7
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="D2VistaAerea/Tubo"]
+libraries = {
+"": SubResource("AnimationLibrary_uphwd")
+}
+autoplay = "new_animation"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2.34375)
+shape = SubResource("RectangleShape2D_1c11w")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-22, -33)
+
+[node name="PlayerGUI" type="CanvasLayer" parent="."]
+
+[node name="Monedas" type="Panel" parent="PlayerGUI"]
+offset_left = 10.0
+offset_top = 90.0
+offset_right = 181.0
+offset_bottom = 153.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jvqk0")
+
+[node name="Label" type="Label" parent="PlayerGUI/Monedas"]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 15.0
+offset_right = 94.0
+offset_bottom = 51.0
+theme_override_fonts/font = ExtResource("4_1qper")
+theme_override_font_sizes/font_size = 40
+text = ":"
+label_settings = SubResource("LabelSettings_bt2bg")
+
+[node name="MonedasLabel" type="Label" parent="PlayerGUI/Monedas"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 13.0
+offset_right = 119.0
+offset_bottom = 49.0
+theme_override_fonts/font = ExtResource("4_1qper")
+theme_override_font_sizes/font_size = 40
+label_settings = SubResource("LabelSettings_wd6ir")
+
+[node name="Moneda" type="Sprite2D" parent="PlayerGUI/Monedas"]
+position = Vector2(39, 31)
+scale = Vector2(3.38125, 2.98438)
+texture = ExtResource("5_r7npa")
+hframes = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerGUI/Monedas"]
+libraries = {
+"": SubResource("AnimationLibrary_e1x57")
+}
+autoplay = "monedaGUI"
+
+[node name="Vidas" type="Panel" parent="PlayerGUI"]
+offset_left = 10.0
+offset_top = 11.0
+offset_right = 181.0
+offset_bottom = 74.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_akqwl")
+
+[node name="Vida1" type="Sprite2D" parent="PlayerGUI/Vidas"]
+position = Vector2(30, 31)
+scale = Vector2(0.12439, 0.131844)
+texture = ExtResource("6_h3ilm")
+
+[node name="Vida2" type="Sprite2D" parent="PlayerGUI/Vidas"]
+position = Vector2(84, 31)
+scale = Vector2(0.12439, 0.131844)
+texture = ExtResource("6_h3ilm")
+
+[node name="Vida3" type="Sprite2D" parent="PlayerGUI/Vidas"]
+position = Vector2(138, 30)
+scale = Vector2(0.12439, 0.131844)
+texture = ExtResource("6_h3ilm")
+
+[node name="VidaVacia1" type="Sprite2D" parent="PlayerGUI/Vidas"]
+position = Vector2(30, 31)
+scale = Vector2(0.124, 0.132)
+texture = ExtResource("7_wv6bx")
+
+[node name="VidaVacia2" type="Sprite2D" parent="PlayerGUI/Vidas"]
+position = Vector2(84, 31)
+scale = Vector2(0.124, 0.132)
+texture = ExtResource("7_wv6bx")
+
+[node name="VidaVacia3" type="Sprite2D" parent="PlayerGUI/Vidas"]
+position = Vector2(138, 31)
+scale = Vector2(0.124, 0.132)
+texture = ExtResource("7_wv6bx")
+
+[node name="InvulnerabilityTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="DeathAnimationTimer" type="Timer" parent="."]

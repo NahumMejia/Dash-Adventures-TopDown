@@ -1,0 +1,89 @@
+[gd_scene load_steps=8 format=3 uid="uid://hdryn037eh7l"]
+
+[ext_resource type="Script" path="res://Scripts/menuScript.gd" id="1_kapxs"]
+[ext_resource type="Script" path="res://Scripts/movimientoFondoMenu.gd" id="2_djyna"]
+[ext_resource type="Texture2D" uid="uid://g54ecby05hwj" path="res://Modelos/Logo-Dash.png" id="2_i1tek"]
+[ext_resource type="Texture2D" uid="uid://ckl1205wdra7g" path="res://Modelos/Fondo1-Menu.png" id="2_pc50d"]
+[ext_resource type="AudioStream" uid="uid://bsdpk8m43yhnn" path="res://Musica/Gamesounds_Foundry_-_Disco_Saga_-_Menu.wav" id="3_3vta2"]
+[ext_resource type="FontFile" uid="uid://bs5hhjtx1h8p0" path="res://Fuentes/Gameplay.ttf" id="4_28ytg"]
+
+[sub_resource type="GDScript" id="GDScript_b1c2c"]
+script/source = "extends VBoxContainer
+"
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kapxs")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("2_djyna")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(3000, 3000)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("2_pc50d")
+region_enabled = true
+region_rect = Rect2(0, 0, 3000, 3000)
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.0
+offset_top = -105.0
+offset_right = 154.0
+offset_bottom = 105.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_b1c2c")
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer2"]
+layout_mode = 2
+texture = ExtResource("2_i1tek")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2"]
+layout_mode = 2
+
+[node name="jugarBtn" type="Button" parent="VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.768627, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(3.36915e-07, 0.556072, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0.500788, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_28ytg")
+theme_override_font_sizes/font_size = 80
+text = "Jugar"
+flat = true
+
+[node name="salirBtn" type="Button" parent="VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.767072, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0.556863, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_28ytg")
+theme_override_font_sizes/font_size = 80
+text = "Salir"
+flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_3vta2")
+volume_db = 5.778
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer2/VBoxContainer/jugarBtn" to="." method="_on_jugar_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer2/VBoxContainer/salirBtn" to="." method="_on_salir_btn_pressed"]

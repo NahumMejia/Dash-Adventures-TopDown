@@ -1,0 +1,185 @@
+[gd_scene load_steps=16 format=3 uid="uid://cktlfkiyhjyxy"]
+
+[ext_resource type="PackedScene" uid="uid://siwcdwjkxre1" path="res://Escenas/pause_menu.tscn" id="1_pgtaa"]
+[ext_resource type="PackedScene" uid="uid://ybpky7venuxw" path="res://Nivel3/carreteraNivel3Inicio.tscn" id="2_ei7mi"]
+[ext_resource type="PackedScene" uid="uid://imsnmd417r8p" path="res://Escenas/playerFinal.tscn" id="3_f8rn7"]
+[ext_resource type="PackedScene" uid="uid://dl6psoxycs15p" path="res://Nivel3/Nieve.tscn" id="3_hxcfd"]
+[ext_resource type="PackedScene" uid="uid://cmdeqbgmfyu3l" path="res://Nivel1/obstaculoNivel1.tscn" id="3_u5au1"]
+[ext_resource type="PackedScene" uid="uid://daqthihy56se8" path="res://Nivel3/carreteraContinuaNivel3.tscn" id="3_w7h15"]
+[ext_resource type="PackedScene" uid="uid://cyo7py6nlhvja" path="res://Escenas/panelSped.tscn" id="4_dexd8"]
+[ext_resource type="PackedScene" uid="uid://cm3162eroddyr" path="res://Nivel1/bacheNivel1.tscn" id="5_5f04g"]
+[ext_resource type="PackedScene" uid="uid://c5yeej553swee" path="res://Escenas/hongoDecoracion.tscn" id="6_88elp"]
+[ext_resource type="PackedScene" uid="uid://bchy2mxr5fxyy" path="res://Escenas/moneda.tscn" id="9_qq6mu"]
+[ext_resource type="PackedScene" uid="uid://be1mjtmynsoln" path="res://Nivel3/cueva.tscn" id="10_1l2of"]
+[ext_resource type="PackedScene" uid="uid://bi2d0ohowfreo" path="res://Nivel2/tronco.tscn" id="12_vk5oi"]
+[ext_resource type="PackedScene" uid="uid://jft105s7c4h4" path="res://Nivel3/MEMORIA.tscn" id="13_f60sn"]
+[ext_resource type="AudioStream" uid="uid://xwhy4f4wf764" path="res://Nivel1/Shake It Off (8 Bit Remix Cover Version) [Tribute to Taylor Swift] - 8 Bit Universe.mp3" id="14_coh0x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2r71o"]
+size = Vector2(6422, 20)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="PAUSA" type="CanvasLayer" parent="."]
+
+[node name="PauseMenu" parent="PAUSA" instance=ExtResource("1_pgtaa")]
+visible = false
+
+[node name="Partes del mapa" type="Node2D" parent="."]
+
+[node name="StaticBody2D" parent="Partes del mapa" instance=ExtResource("2_ei7mi")]
+position = Vector2(770, 6541)
+
+[node name="StaticBody2D2" parent="Partes del mapa" instance=ExtResource("3_w7h15")]
+position = Vector2(770, -3022)
+
+[node name="StaticBody2D3" parent="Partes del mapa" instance=ExtResource("3_w7h15")]
+position = Vector2(770, 1760)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Partes del mapa/StaticBody2D3"]
+position = Vector2(781, -676)
+shape = SubResource("RectangleShape2D_2r71o")
+
+[node name="StaticBody2D4" parent="Partes del mapa" instance=ExtResource("3_w7h15")]
+position = Vector2(770, -7795)
+
+[node name="Obstaculos" type="Node2D" parent="."]
+
+[node name="CharacterBody2D" parent="Obstaculos" instance=ExtResource("3_u5au1")]
+position = Vector2(1088, -1001)
+
+[node name="StaticBody2D3" parent="Obstaculos" instance=ExtResource("4_dexd8")]
+position = Vector2(1083, -503)
+
+[node name="StaticBody2D5" parent="Obstaculos" instance=ExtResource("4_dexd8")]
+position = Vector2(590, -1997)
+
+[node name="StaticBody2D8" parent="Obstaculos" instance=ExtResource("4_dexd8")]
+position = Vector2(861, -2910)
+
+[node name="StaticBody2D9" parent="Obstaculos" instance=ExtResource("4_dexd8")]
+position = Vector2(862, -3701)
+
+[node name="StaticBody2D16" parent="Obstaculos" instance=ExtResource("4_dexd8")]
+position = Vector2(840, -5800)
+
+[node name="StaticBody2D17" parent="Obstaculos" instance=ExtResource("4_dexd8")]
+position = Vector2(586, -7589)
+
+[node name="StaticBody2D18" parent="Obstaculos" instance=ExtResource("4_dexd8")]
+position = Vector2(1078, -8988)
+
+[node name="StaticBody2D19" parent="Obstaculos" instance=ExtResource("4_dexd8")]
+position = Vector2(863, -10091)
+
+[node name="StaticBody2D4" parent="Obstaculos" instance=ExtResource("5_5f04g")]
+position = Vector2(843, -1309)
+
+[node name="StaticBody2D6" parent="Obstaculos" instance=ExtResource("5_5f04g")]
+position = Vector2(1083, -1842)
+
+[node name="StaticBody2D10" parent="Obstaculos" instance=ExtResource("5_5f04g")]
+position = Vector2(586, -3345)
+
+[node name="StaticBody2D11" parent="Obstaculos" instance=ExtResource("5_5f04g")]
+position = Vector2(1079, -4020)
+
+[node name="StaticBody2D12" parent="Obstaculos" instance=ExtResource("5_5f04g")]
+position = Vector2(674, -4496)
+
+[node name="StaticBody2D13" parent="Obstaculos" instance=ExtResource("5_5f04g")]
+position = Vector2(992, -4953)
+
+[node name="StaticBody2D24" parent="Obstaculos" instance=ExtResource("5_5f04g")]
+position = Vector2(818, -9514)
+
+[node name="StaticBody2D25" parent="Obstaculos" instance=ExtResource("5_5f04g")]
+position = Vector2(1026, -11976)
+
+[node name="StaticBody2D27" parent="Obstaculos" instance=ExtResource("5_5f04g")]
+position = Vector2(851, -11478)
+
+[node name="StaticBody2D26" parent="Obstaculos" instance=ExtResource("5_5f04g")]
+position = Vector2(586, -12501)
+
+[node name="Sprite2D" parent="Obstaculos" instance=ExtResource("6_88elp")]
+position = Vector2(1608, 38)
+
+[node name="StaticBody2D" parent="Obstaculos" instance=ExtResource("3_hxcfd")]
+position = Vector2(841, 153)
+
+[node name="StaticBody2D7" parent="Obstaculos" instance=ExtResource("3_hxcfd")]
+position = Vector2(591, -1569)
+
+[node name="StaticBody2D14" parent="Obstaculos" instance=ExtResource("3_hxcfd")]
+position = Vector2(595, -5471)
+
+[node name="StaticBody2D15" parent="Obstaculos" instance=ExtResource("3_hxcfd")]
+position = Vector2(1078, -6238)
+
+[node name="StaticBody2D20" parent="Obstaculos" instance=ExtResource("3_hxcfd")]
+position = Vector2(908, -7589)
+
+[node name="StaticBody2D21" parent="Obstaculos" instance=ExtResource("3_hxcfd")]
+position = Vector2(599, -8988)
+
+[node name="StaticBody2D22" parent="Obstaculos" instance=ExtResource("3_hxcfd")]
+position = Vector2(1022, -9540)
+
+[node name="StaticBody2D23" parent="Obstaculos" instance=ExtResource("3_hxcfd")]
+position = Vector2(674, -10090)
+
+[node name="StaticBody2D2" parent="Obstaculos" instance=ExtResource("3_hxcfd")]
+position = Vector2(586, -899)
+
+[node name="Node3" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(861, -870)
+
+[node name="Node4" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(603, -4026)
+
+[node name="Node5" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(1026, -4604)
+
+[node name="Node6" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(595, -4959)
+
+[node name="Node7" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(603, -6212)
+
+[node name="Node8" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(1097, -6992)
+
+[node name="Node9" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(603, -7294)
+
+[node name="Node10" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(1022, -8474)
+
+[node name="Node11" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(770, -11098)
+
+[node name="Node12" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(595, -11982)
+
+[node name="Node13" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(1069, -12342)
+
+[node name="Node2" parent="Obstaculos" instance=ExtResource("9_qq6mu")]
+position = Vector2(861, -604)
+
+[node name="StaticBody2D28" parent="Obstaculos" instance=ExtResource("12_vk5oi")]
+position = Vector2(1090, -10816)
+
+[node name="Node2D" parent="Obstaculos" instance=ExtResource("10_1l2of")]
+position = Vector2(1021, -13370)
+
+[node name="Node2D2" parent="Obstaculos" instance=ExtResource("13_f60sn")]
+position = Vector2(864, -12809)
+
+[node name="Jugador" parent="." instance=ExtResource("3_f8rn7")]
+position = Vector2(823, 974)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_coh0x")
+autoplay = true
